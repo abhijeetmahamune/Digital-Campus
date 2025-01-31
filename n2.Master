@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="n2.master.cs" Inherits="CampusNavigationWeb.n2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Campus Navigation :: Welcome To Campus Navigation</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<link href="styles/default.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/styles.css">
+    <link href="Styles/Input.css" rel="stylesheet" />
+<script src="js/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="js/script.js"></script>
+
+</head>
+
+
+<body>
+
+            <div class="main">
+            
+
+             <form id="form1" runat="server">
+            
+        	<div class="top-section">
+            	<div class="wrapper">
+                	<div class="logo"><a href="#"><img src="images/logo.png" alt="Company Logo"></a></div>
+                   
+                	
+                </div>
+            	<div class="clr"></div>
+            </div>
+
+            <div class="wrapper">
+            	<div class="welcome-box">
+                	<div class="welcome">
+                    	<%--<div class="welcome-left">--%>
+                         <asp:Label runat="server" class="welcome" ID="lblWelcome" Text="Welcome" />
+                        <%-- </div>--%>
+                        
+                        <%--div class="welcome-right">Balance SMS 10 till 10 th NOV 2016</div>--%>
+                    	<div class="clr"></div>
+                    </div>
+
+                	<div class="clr"></div>
+                </div>
+            	<div class="clr"></div>
+            </div>
+            
+                 <div class="wrapper" >
+	            <div class="menu" runat="server" id="divAdmin">
+                	<div class="menu-box">
+                    	<div id="cssmenu">
+                          <ul>
+                              <li><a href="Home.aspx">Home</a></li>
+                              <li><a href="Devices.aspx">Devices</a></li>
+                              <li><a href="BLE.aspx">BLE</a></li>
+                              <li><a href="Users.aspx">Users</a></li>
+                              <li><a href="Visitors.aspx">Visitors</a></li>
+                                <li><a href="Logout.aspx" style="border-right:none;">Logout</a></li>
+                          </ul>
+                          <div class="clr"></div>
+                         </div>
+                    	<div class="clr"></div>
+                    </div>
+                	<div class="clr"></div>
+                </div>
+
+            
+	            <div class="menu" runat="server" id="divHR">
+                	<div class="menu-box">
+                    	<div id="cssmenu">
+                          <ul>
+                              <li><a href="Home.aspx">Home</a></li>
+                              <li><a href="Visitors.aspx">Visitors</a></li>
+
+                              <li><a href="Tracking.aspx">Tracking</a></li>
+                                <li><a href="Logout.aspx" style="border-right:none;">Logout</a></li>
+                          </ul>
+                          <div class="clr"></div>
+                         </div>
+                    	<div class="clr"></div>
+                    </div>
+                	<div class="clr"></div>
+                </div>
+
+
+               <%-- <div class="box">
+            	<div class="welbox"><div class="weltitle">Welcome to PingCustomer</div></div>--%>
+                <%--<div class="clr" style="padding:3px;text-align:center;background-color:transparent;color:Red;font-size:small;>         	                         --%>
+                <div class="clr" style="padding:3px;text-align:center;background-color:transparent;color:White;font-size:small;">         	                         
+                         <asp:Label runat="server"    ID="lblMessage" />                            
+                    	</div>
+
+                 <div class="clr">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+           	
+            </div>
+            </div>
+
+             <div class="copyright">&copy;&nbsp;Campus Navigation, 2023
+             <asp:Label runat="server" class="welcome" Text="Date"  ID="lblDateTime" ClientIDMode="Static"/>
+             </div>
+        	<div class="clr"></div>
+
+    
+    </form>
+            
+</body>
+</html>
